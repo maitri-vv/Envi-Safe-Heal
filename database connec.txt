@@ -1,0 +1,25 @@
+<?php
+// database connection code
+// $con = mysqli_connect('localhost', 'database_user', 'database_password','database');
+
+$con = mysqli_connect('localhost', 'root', '','PBL4');
+
+// get the post records
+$Firstname = $_POST['Firstname'];
+$Lastname = $_POST['Lastname'];
+$CNIC = $_POST['CNIC'];
+$Email = $_POST['Email'];
+$Password = $_POST['Password'];
+
+// database insert SQL code
+$sql = "INSERT INTO `register` (`Firstname`, `Lastname`, `CNIC`, `Email`, `Password`) VALUES ('$Firstname', '$Lastname', '$CNIC', '$Email', '$Password')";
+
+// insert in database 
+$rs = mysqli_query($con, $sql);
+
+if($rs)
+{
+	echo "Contact Records Inserted";
+}
+
+?>

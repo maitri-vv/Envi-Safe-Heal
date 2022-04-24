@@ -1,0 +1,28 @@
+<!-- Navbar -->
+    <nav id="mainNavbar" class="navbar navbar-expand-lg navbar-light fixed-top py-0">
+        <div class="container">
+            <a href="index.html" class="img-fluid navbar-brand"><img src="nav-logo.jpg" class="img-hover"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="justify-content-end collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item pr-2">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Login
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="donorLogin.html">As a Donor</a>
+                            <a class="dropdown-item" href="recipientLogin.html">As a Recipient</a>
+                        </div>
+                    </li>
+                    <li class="nav-item pr-2">
+                        <a href="register.html" class="nav-link">Register</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
